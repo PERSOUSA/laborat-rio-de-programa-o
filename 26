@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, c;
+    printf("Digite tres numeros: ");
+    scanf("%f %f %f", &a, &b, &c);
+    
+    float media_aritmetica = (a + b + c) / 3;
+    float media_geometrica = pow(a * b * c, 1.0/3.0);
+    
+    printf("Media aritmetica: %.2f\n", media_aritmetica);
+    printf("Media geometrica: %.2f\n", media_geometrica);
+    
+    return 0;
+}
