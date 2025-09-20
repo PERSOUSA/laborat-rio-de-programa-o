@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    printf("Digite dois numeros inteiros: ");
+    scanf("%d %d", &a, &b);
+    
+    char *resultado = (b != 0 && a % b == 0) ? "eh multiplo" : "nao eh multiplo";
+    printf("%d %s de %d\n", a, resultado, b);
+    
+    return 0;
+}
