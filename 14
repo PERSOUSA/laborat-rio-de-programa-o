@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int dias;
+    printf("Digite o numero de dias trabalhados: ");
+    scanf("%d", &dias);
+    
+    float salario_bruto = dias * 50.25;
+    float gratificacao = 0;
+    
+    if (dias > 10 && dias <= 20) {
+        gratificacao = salario_bruto * 0.20;
+    } else if (dias > 20) {
+        gratificacao = salario_bruto * 0.30;
+    }
+    
+    float salario_com_gratificacao = salario_bruto + gratificacao;
+    float imposto = salario_com_gratificacao * 0.10;
+    float salario_liquido = salario_com_gratificacao - imposto;
+    
+    printf("Salario bruto: R$ %.2f\n", salario_bruto);
+    printf("Gratificacao: R$ %.2f\n", gratificacao);
+    printf("Imposto: R$ %.2f\n", imposto);
+    printf("Salario liquido: R$ %.2f\n", salario_liquido);
+    
+    return 0;
+}
