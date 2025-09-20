@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int numero;
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &numero);
+    
+    char *resultado = (numero % 2 == 0) ? "PAR" : "IMPAR";
+    printf("O numero %d eh %s\n", numero, resultado);
+    
+    return 0;
+}
