@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, temp;
+    printf("Digite dois valores (A e B): ");
+    scanf("%d %d", &a, &b);
+    
+    printf("Valores originais: A = %d, B = %d\n", a, b);
+    
+    // Troca os valores
+    temp = a;
+    a = b;
+    b = temp;
+    
+    printf("Valores trocados: A = %d, B = %d\n", a, b);
+    return 0;
+}
